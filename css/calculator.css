@@ -1,17 +1,22 @@
 .clear {
     clear: both;
 }
+
 main .contactForm.calc .contactBox {
     max-width: unset;
 }
-.side__menu {display: -webkit-box;
+
+.side__menu {
+    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    width: 282px;}
+    width: 282px;
+}
+
 .login__alternate {
     background: var(--accent2);
     width: 100%;
@@ -24,10 +29,12 @@ main .contactForm.calc .contactBox {
     place-content: center;
     flex-direction: column;
 }
+
 .login__alternate a {
     display: block;
     margin-top: 10px;
 }
+
 #main {
     position: relative;
     min-height: 636px;
@@ -41,19 +48,27 @@ main .contactForm.calc .contactBox {
     background: var(--accent2);
 }
 
-#form01, #form02{
+#form01,
+#form02 {
     background: transparent;
     box-shadow: none;
 }
+
 #main h2 {
     font-size: 24px;
 }
+
 #back {
     float: left;
 }
+
 #form01 label {
-    float: right;
+    float: left;
+    font-size: 16px;
+    width: 200px;
+    text-align: left;
 }
+
 .calc__title {
     margin-bottom: 24px;
     font-size: 30px;
@@ -61,6 +76,7 @@ main .contactForm.calc .contactBox {
     color: #007a00;
     letter-spacing: -1.5px;
 }
+
 #main h1 {
     font-family: Lato;
     text-align: center;
@@ -72,7 +88,8 @@ main .contactForm.calc .contactBox {
 }
 
 
-#proceed, #start_over {
+#proceed,
+#start_over {
     float: right;
 }
 
@@ -82,11 +99,14 @@ main .contactForm.calc .contactBox {
 
 /* Form Styles */
 
-#form02, #result_wrapper, #back {
+#form02,
+#result_wrapper,
+#back {
     display: none;
 }
 
-form h2, #result_wrapper h2 {
+form h2,
+#result_wrapper h2 {
     font-weight: 600;
     font-size: 24px;
 }
@@ -95,11 +115,13 @@ form h2, #result_wrapper h2 {
     margin: 10px 10px;
     padding: 10px;
 }
+
 .selector_wrapper {
     color: #fff;
     padding: 40px 20px;
     text-align: left;
 }
+
 .selector_wrapper span {
     display: inline-block;
     width: 160px;
@@ -108,7 +130,10 @@ form h2, #result_wrapper h2 {
 
 
 
-.selector_wrapper span:last-child {margin-bottom: 0px;}
+.selector_wrapper span:last-child {
+    margin-bottom: 0px;
+}
+
 .selector_wrapper select {
     width: auto;
     min-width: 60px;
@@ -116,19 +141,20 @@ form h2, #result_wrapper h2 {
     margin-right: 10px;
     background: var(--main);
 }
+
 .selector_wrapper select option {
     background-color: var(--main);
     color: var(--text-bg);
 }
+
 .selector_wrapper select option:hover {
     background-color: var(--text-bg);
     color: var(--main);
 }
+
+.selector_wrapper label {}
+
 .selector_wrapper label {
-
-}
-
-.selector_wrapper label{
     margin-right: 25px;
 }
 
@@ -138,6 +164,7 @@ form h2, #result_wrapper h2 {
     border-radius: 15px;
     color: white;
 }
+
 .calc_subtitle {
     margin-bottom: 20px;
     color: var(--text-bg);
@@ -155,7 +182,8 @@ form h2, #result_wrapper h2 {
     padding: 15px;
     border: 2px solid var(--main);
 }
-.selector_wrapper > span {
+
+.selector_wrapper>span {
     color: var(--main);
 }
 
@@ -171,6 +199,7 @@ form h2, #result_wrapper h2 {
     place-content: center;
     flex-direction: column;
 }
+
 #score {
     box-sizing: border-box;
     text-align: center;
@@ -189,19 +218,130 @@ form h2, #result_wrapper h2 {
 .inner {
     min-height: 450px;
 }
+
 .health .recipe__ingredients-item-2--first::before {
 
     background: url(../img/icon-water.png) center no-repeat;
 }
+
 .health .recipe__ingredients-item-2--second::before {
     background: url(../img/icon-food.png) center no-repeat;
 }
-.health .recipe__ingredients-item-2--third::before{
+
+.health .recipe__ingredients-item-2--third::before {
     background: url(../img/icon-gym.png);
 }
+
 #proceed.btn {
     width: 30%;
     position: absolute;
     bottom: 20px;
     right: 28px;
+}
+
+#form01 form {
+    box-shadow: none;
+    background: transparent;
+}
+
+#form01 fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#form01 p {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px 0;
+}
+
+#form01 .form-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#form01 input,
+#form01 select {
+    padding: 7px 3px;
+    border: none;
+    border-bottom: 1px solid var(--main);
+    background: transparent;
+    width: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    color: #fff;
+    font-size: 16px;
+}
+
+#form01 input:focus,
+#form01 input:active {
+    border: 1px solid var(--main);
+    background: transparent;
+}
+
+
+#form01 .btn-group {
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.cal_buttons {
+    bottom: 35px;
+    font-size: 13px;
+    color: #fff;
+    background: transparent;
+    padding: 7px 20px;
+    border: 2px solid var(--main);
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+    filter: drop-shadow(0px 3px 1px #0006);
+    transition: 0.5s;
+    font-weight: 600;
+    width: 100px;
+    margin: auto 10px;
+}
+
+table {
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+    border: 1px solid var(--main);
+    font-size: 16px;
+}
+
+table caption {
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+
+td,
+th {
+    border: 1px solid var(--main);
+    padding: 5px;
+    text-align: center;
+}
+
+.scrollable {
+    margin-left: 0 !important;
+}
+
+div.pinned {
+    display: none;
+}
+
+option {
+    color: #fff;
+    background: var(--accent2);
+}
+
+#recipes_link {
+    display: none;
+    font-weight: 600;
 }

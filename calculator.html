@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/contactUs.css">
+    <link href="css/responsive-tables.css" type="text/css" media="screen" rel="stylesheet" />
     <link rel="stylesheet" href="css/calculator.css">
 </head>
 
@@ -37,7 +38,7 @@
                     <form id="searchForm">
                         <input type="search" id="search" placeholder="Search" name="search" value="" maxlength="15">
                         <input type="submit" value="">
-                        <span>Improve your skills with us</span>
+                        <span>Search for a recipe</span>
                     </form>
 
                 </div>
@@ -103,592 +104,140 @@
                             </div>
 
                             <!--  CALCULATOR -->
-                            <form id="form01">
-                                <h2>Basic info</h2>
-                                <div class="inner">
-                                    <span class="calc_subtitle">
-                                        Enter your weight, gender and age.
-                                    </span>
-                                    <div class="selector_wrapper">
-                                        <span>Gender</span>
-                                        <label><input type="radio" name="gender" id="male" checked=""> Male</label>
-                                        <label><input type="radio" name="gender" id="female"> Female</label>
-                                        <br><br>
-                                        <span>Age:</span>
-                                        <select name="select" id="age_select">
-                                            <option value="value1">14</option>
-                                            <option>15</option>
-                                            <option>16</option>
-                                            <option>17</option>
-                                            <option>18</option>
-                                            <option>19</option>
-                                            <option>20</option>
-                                            <option>21</option>
-                                            <option>22</option>
-                                            <option>23</option>
-                                            <option>24</option>
-                                            <option selected="">25</option>
-                                            <option>26</option>
-                                            <option>27</option>
-                                            <option>28</option>
-                                            <option>29</option>
-                                            <option>30</option>
-                                            <option>31</option>
-                                            <option>32</option>
-                                            <option>33</option>
-                                            <option>34</option>
-                                            <option>35</option>
-                                            <option>36</option>
-                                            <option>37</option>
-                                            <option>38</option>
-                                            <option>39</option>
-                                            <option>40</option>
-                                            <option>41</option>
-                                            <option>42</option>
-                                            <option>43</option>
-                                            <option>44</option>
-                                            <option>45</option>
-                                            <option>46</option>
-                                            <option>47</option>
-                                            <option>48</option>
-                                            <option>49</option>
-                                            <option>50</option>
-                                            <option>51</option>
-                                            <option>52</option>
-                                            <option>53</option>
-                                            <option>54</option>
-                                            <option>55</option>
-                                            <option>56</option>
-                                            <option>57</option>
-                                            <option>58</option>
-                                            <option>59</option>
-                                            <option>60</option>
-                                            <option>61</option>
-                                            <option>62</option>
-                                            <option>63</option>
-                                            <option>64</option>
-                                            <option>65</option>
-                                            <option>66</option>
-                                            <option>67</option>
-                                            <option>68</option>
-                                            <option>69</option>
-                                            <option>70</option>
-                                            <option>71</option>
-                                            <option>72</option>
-                                            <option>73</option>
-                                            <option>74</option>
-                                            <option>75</option>
-                                            <option>76</option>
-                                            <option>77</option>
-                                            <option>78</option>
-                                            <option>79</option>
-                                            <option>80</option>
-                                            <option>81</option>
-                                            <option>82</option>
-                                            <option>83</option>
-                                            <option>84</option>
-                                            <option>85</option>
-                                            <option>86</option>
-                                            <option>87</option>
-                                            <option>88</option>
-                                            <option>89</option>
-                                            <option>90</option>
-                                            <option>15</option>
-                                            <option>16</option>
-                                            <option>17</option>
-                                            <option>18</option>
-                                            <option>19</option>
-                                            <option>20</option>
-                                            <option>21</option>
-                                            <option>22</option>
-                                            <option>23</option>
-                                            <option>24</option>
-                                            <option>25</option>
-                                            <option>26</option>
-                                            <option>27</option>
-                                            <option>28</option>
-                                            <option>29</option>
-                                            <option>30</option>
-                                            <option>31</option>
-                                            <option>32</option>
-                                            <option>33</option>
-                                            <option>34</option>
-                                            <option>35</option>
-                                            <option>36</option>
-                                            <option>37</option>
-                                            <option>38</option>
-                                            <option>39</option>
-                                            <option>40</option>
-                                            <option>41</option>
-                                            <option>42</option>
-                                            <option>43</option>
-                                            <option>44</option>
-                                            <option>45</option>
-                                            <option>46</option>
-                                            <option>47</option>
-                                            <option>48</option>
-                                            <option>49</option>
-                                            <option>50</option>
-                                            <option>51</option>
-                                            <option>52</option>
-                                            <option>53</option>
-                                            <option>54</option>
-                                            <option>55</option>
-                                            <option>56</option>
-                                            <option>57</option>
-                                            <option>58</option>
-                                            <option>59</option>
-                                            <option>60</option>
-                                            <option>61</option>
-                                            <option>62</option>
-                                            <option>63</option>
-                                            <option>64</option>
-                                            <option>65</option>
-                                            <option>66</option>
-                                            <option>67</option>
-                                            <option>68</option>
-                                            <option>69</option>
-                                            <option>70</option>
-                                            <option>71</option>
-                                            <option>72</option>
-                                            <option>73</option>
-                                            <option>74</option>
-                                            <option>75</option>
-                                            <option>76</option>
-                                            <option>77</option>
-                                            <option>78</option>
-                                            <option>79</option>
-                                            <option>80</option>
-                                            <option>81</option>
-                                            <option>82</option>
-                                            <option>83</option>
-                                            <option>84</option>
-                                            <option>85</option>
-                                            <option>86</option>
-                                            <option>87</option>
-                                            <option>88</option>
-                                            <option>89</option>
-                                            <option>90</option>
-                                        </select> years
-                                        <br><br>
-                                        <span>Weight:</span>
-                                        <select name="select" id="weight_select">
-                                            <option value="value1">30</option>
-                                            <option>31</option>
-                                            <option>32</option>
-                                            <option>33</option>
-                                            <option>34</option>
-                                            <option>35</option>
-                                            <option>36</option>
-                                            <option>37</option>
-                                            <option>38</option>
-                                            <option>39</option>
-                                            <option>40</option>
-                                            <option>41</option>
-                                            <option>42</option>
-                                            <option>43</option>
-                                            <option>44</option>
-                                            <option>45</option>
-                                            <option>46</option>
-                                            <option>47</option>
-                                            <option>48</option>
-                                            <option>49</option>
-                                            <option>50</option>
-                                            <option>51</option>
-                                            <option>52</option>
-                                            <option>53</option>
-                                            <option>54</option>
-                                            <option selected="">55</option>
-                                            <option>56</option>
-                                            <option>57</option>
-                                            <option>58</option>
-                                            <option>59</option>
-                                            <option>60</option>
-                                            <option>61</option>
-                                            <option>62</option>
-                                            <option>63</option>
-                                            <option>64</option>
-                                            <option>65</option>
-                                            <option>66</option>
-                                            <option>67</option>
-                                            <option>68</option>
-                                            <option>69</option>
-                                            <option>70</option>
-                                            <option>71</option>
-                                            <option>72</option>
-                                            <option>73</option>
-                                            <option>74</option>
-                                            <option>75</option>
-                                            <option>76</option>
-                                            <option>77</option>
-                                            <option>78</option>
-                                            <option>79</option>
-                                            <option>80</option>
-                                            <option>81</option>
-                                            <option>82</option>
-                                            <option>83</option>
-                                            <option>84</option>
-                                            <option>85</option>
-                                            <option>86</option>
-                                            <option>87</option>
-                                            <option>88</option>
-                                            <option>89</option>
-                                            <option>90</option>
-                                            <option>91</option>
-                                            <option>92</option>
-                                            <option>93</option>
-                                            <option>94</option>
-                                            <option>95</option>
-                                            <option>96</option>
-                                            <option>97</option>
-                                            <option>98</option>
-                                            <option>99</option>
-                                            <option>100</option>
-                                            <option>101</option>
-                                            <option>102</option>
-                                            <option>103</option>
-                                            <option>104</option>
-                                            <option>105</option>
-                                            <option>106</option>
-                                            <option>107</option>
-                                            <option>108</option>
-                                            <option>109</option>
-                                            <option>110</option>
-                                            <option>111</option>
-                                            <option>112</option>
-                                            <option>113</option>
-                                            <option>114</option>
-                                            <option>115</option>
-                                            <option>116</option>
-                                            <option>117</option>
-                                            <option>118</option>
-                                            <option>119</option>
-                                            <option>120</option>
-                                            <option>31</option>
-                                            <option>32</option>
-                                            <option>33</option>
-                                            <option>34</option>
-                                            <option>35</option>
-                                            <option>36</option>
-                                            <option>37</option>
-                                            <option>38</option>
-                                            <option>39</option>
-                                            <option>40</option>
-                                            <option>41</option>
-                                            <option>42</option>
-                                            <option>43</option>
-                                            <option>44</option>
-                                            <option>45</option>
-                                            <option>46</option>
-                                            <option>47</option>
-                                            <option>48</option>
-                                            <option>49</option>
-                                            <option>50</option>
-                                            <option>51</option>
-                                            <option>52</option>
-                                            <option>53</option>
-                                            <option>54</option>
-                                            <option>55</option>
-                                            <option>56</option>
-                                            <option>57</option>
-                                            <option>58</option>
-                                            <option>59</option>
-                                            <option>60</option>
-                                            <option>61</option>
-                                            <option>62</option>
-                                            <option>63</option>
-                                            <option>64</option>
-                                            <option>65</option>
-                                            <option>66</option>
-                                            <option>67</option>
-                                            <option>68</option>
-                                            <option>69</option>
-                                            <option>70</option>
-                                            <option>71</option>
-                                            <option>72</option>
-                                            <option>73</option>
-                                            <option>74</option>
-                                            <option>75</option>
-                                            <option>76</option>
-                                            <option>77</option>
-                                            <option>78</option>
-                                            <option>79</option>
-                                            <option>80</option>
-                                            <option>81</option>
-                                            <option>82</option>
-                                            <option>83</option>
-                                            <option>84</option>
-                                            <option>85</option>
-                                            <option>86</option>
-                                            <option>87</option>
-                                            <option>88</option>
-                                            <option>89</option>
-                                            <option>90</option>
-                                            <option>91</option>
-                                            <option>92</option>
-                                            <option>93</option>
-                                            <option>94</option>
-                                            <option>95</option>
-                                            <option>96</option>
-                                            <option>97</option>
-                                            <option>98</option>
-                                            <option>99</option>
-                                            <option>100</option>
-                                            <option>101</option>
-                                            <option>102</option>
-                                            <option>103</option>
-                                            <option>104</option>
-                                            <option>105</option>
-                                            <option>106</option>
-                                            <option>107</option>
-                                            <option>108</option>
-                                            <option>109</option>
-                                            <option>110</option>
-                                            <option>111</option>
-                                            <option>112</option>
-                                            <option>113</option>
-                                            <option>114</option>
-                                            <option>115</option>
-                                            <option>116</option>
-                                            <option>117</option>
-                                            <option>118</option>
-                                            <option>119</option>
-                                            <option>120</option>
-                                        </select> kg
-                                        <br><br>
-                                        <span>Height:</span>
-                                        <select name="select" id="height_select">
-                                            <option value="value1">120</option>
-                                            <option>121</option>
-                                            <option>122</option>
-                                            <option>123</option>
-                                            <option>124</option>
-                                            <option>125</option>
-                                            <option>126</option>
-                                            <option>127</option>
-                                            <option>128</option>
-                                            <option>129</option>
-                                            <option>130</option>
-                                            <option>131</option>
-                                            <option>132</option>
-                                            <option>133</option>
-                                            <option>134</option>
-                                            <option>135</option>
-                                            <option>136</option>
-                                            <option>137</option>
-                                            <option>138</option>
-                                            <option>139</option>
-                                            <option>140</option>
-                                            <option>141</option>
-                                            <option>142</option>
-                                            <option>143</option>
-                                            <option>144</option>
-                                            <option>145</option>
-                                            <option>146</option>
-                                            <option>147</option>
-                                            <option>148</option>
-                                            <option>149</option>
-                                            <option>150</option>
-                                            <option>151</option>
-                                            <option>152</option>
-                                            <option>153</option>
-                                            <option>154</option>
-                                            <option>155</option>
-                                            <option>156</option>
-                                            <option>157</option>
-                                            <option>158</option>
-                                            <option>159</option>
-                                            <option>160</option>
-                                            <option>161</option>
-                                            <option>162</option>
-                                            <option>163</option>
-                                            <option>164</option>
-                                            <option>165</option>
-                                            <option>166</option>
-                                            <option>167</option>
-                                            <option>168</option>
-                                            <option>169</option>
-                                            <option selected="">170</option>
-                                            <option>171</option>
-                                            <option>172</option>
-                                            <option>173</option>
-                                            <option>174</option>
-                                            <option>175</option>
-                                            <option>176</option>
-                                            <option>177</option>
-                                            <option>178</option>
-                                            <option>179</option>
-                                            <option>180</option>
-                                            <option>181</option>
-                                            <option>182</option>
-                                            <option>183</option>
-                                            <option>184</option>
-                                            <option>185</option>
-                                            <option>186</option>
-                                            <option>187</option>
-                                            <option>188</option>
-                                            <option>189</option>
-                                            <option>190</option>
-                                            <option>191</option>
-                                            <option>192</option>
-                                            <option>193</option>
-                                            <option>194</option>
-                                            <option>195</option>
-                                            <option>196</option>
-                                            <option>197</option>
-                                            <option>198</option>
-                                            <option>199</option>
-                                            <option>200</option>
-                                            <option>201</option>
-                                            <option>202</option>
-                                            <option>203</option>
-                                            <option>204</option>
-                                            <option>205</option>
-                                            <option>206</option>
-                                            <option>207</option>
-                                            <option>208</option>
-                                            <option>209</option>
-                                            <option>210</option>
-                                            <option>121</option>
-                                            <option>122</option>
-                                            <option>123</option>
-                                            <option>124</option>
-                                            <option>125</option>
-                                            <option>126</option>
-                                            <option>127</option>
-                                            <option>128</option>
-                                            <option>129</option>
-                                            <option>130</option>
-                                            <option>131</option>
-                                            <option>132</option>
-                                            <option>133</option>
-                                            <option>134</option>
-                                            <option>135</option>
-                                            <option>136</option>
-                                            <option>137</option>
-                                            <option>138</option>
-                                            <option>139</option>
-                                            <option>140</option>
-                                            <option>141</option>
-                                            <option>142</option>
-                                            <option>143</option>
-                                            <option>144</option>
-                                            <option>145</option>
-                                            <option>146</option>
-                                            <option>147</option>
-                                            <option>148</option>
-                                            <option>149</option>
-                                            <option>150</option>
-                                            <option>151</option>
-                                            <option>152</option>
-                                            <option>153</option>
-                                            <option>154</option>
-                                            <option>155</option>
-                                            <option>156</option>
-                                            <option>157</option>
-                                            <option>158</option>
-                                            <option>159</option>
-                                            <option>160</option>
-                                            <option>161</option>
-                                            <option>162</option>
-                                            <option>163</option>
-                                            <option>164</option>
-                                            <option>165</option>
-                                            <option>166</option>
-                                            <option>167</option>
-                                            <option>168</option>
-                                            <option>169</option>
-                                            <option>170</option>
-                                            <option>171</option>
-                                            <option>172</option>
-                                            <option>173</option>
-                                            <option>174</option>
-                                            <option>175</option>
-                                            <option>176</option>
-                                            <option>177</option>
-                                            <option>178</option>
-                                            <option>179</option>
-                                            <option>180</option>
-                                            <option>181</option>
-                                            <option>182</option>
-                                            <option>183</option>
-                                            <option>184</option>
-                                            <option>185</option>
-                                            <option>186</option>
-                                            <option>187</option>
-                                            <option>188</option>
-                                            <option>189</option>
-                                            <option>190</option>
-                                            <option>191</option>
-                                            <option>192</option>
-                                            <option>193</option>
-                                            <option>194</option>
-                                            <option>195</option>
-                                            <option>196</option>
-                                            <option>197</option>
-                                            <option>198</option>
-                                            <option>199</option>
-                                            <option>200</option>
-                                            <option>201</option>
-                                            <option>202</option>
-                                            <option>203</option>
-                                            <option>204</option>
-                                            <option>205</option>
-                                            <option>206</option>
-                                            <option>207</option>
-                                            <option>208</option>
-                                            <option>209</option>
-                                            <option>210</option>
-                                        </select> cm
-                                        <br><br>
+                            <div id="form01">
+                                <section class="page-heading">
+                                    <h2>BMR, TDEE and Calorie Target Calculator</h2>
+                                    <p>Calculate your basal metabolic rate (BMR) and total daily energy expenditure
+                                        (TDEE). Estimate calorie
+                                        targets that align with your weight loss, gain or maintenance goals.</p>
+                                </section>
+                                <section class="calorie-targets">
+                                    <form id="calorieTargetForm">
+                                        <fieldset>
+                                            <div class="form-group"><label for="calorieTargetWeight">Weight</label>
+                                                <input type="number" min="50" max="1000" id="calorieTargetWeight"
+                                                    name="weight" value="225"> <select id="calorieTargetWeightUnit">
+                                                    <option selected="selected" value="Imperial">lbs</option>
+                                                    <option value="Metric">kg</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group"><label for="calorieTargetHeight">Height</label>
+                                                <input type="number" min="30" max="250" id="calorieTargetHeight"
+                                                    name="height" value="66"> <select id="calorieTargetHeightUnit">
+                                                    <option selected="selected" value="Imperial">in</option>
+                                                    <option value="Metric">cm</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group"><label for="calorieTargetAge">Age</label> <input
+                                                    type="number" min="1" max="100" id="calorieTargetAge" name="age"
+                                                    value="30"></div>
+                                            <div class="form-group"><label for="calorieTargetActivityLevel">Activity
+                                                    Level</label> <select id="calorieTargetActivityLevel">
+                                                    <option selected="selected" value="sedentary"
+                                                        title="Little to no exercise at all">
+                                                        Sedentary</option>
+                                                    <option value="light" title="Light exercise 1-3 days per week">
+                                                        Lightly Active</option>
+                                                    <option value="moderate"
+                                                        title="Moderate exercise 6-7 days per week">Moderately Active
+                                                    </option>
+                                                    <option value="very"
+                                                        title="Hard exercise every day, or multiple workouts per day">
+                                                        Very
+                                                        Active</option>
+                                                    <option value="extra"
+                                                        title="Hard exercise 2 or more times per day, or hours of moderate cardio every day">
+                                                        Extra Active</option>
+                                                </select></div>
+                                            <div class="form-group"><label for="calorieTargetGender">Gender</label>
+                                                <select id="calorieTargetGender">
+                                                    <option selected="selected" value="male">Male</option>
+                                                    <option value="female">Female</option>
+                                                    <option value="neutral">Neutral</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group"><label for="calorieTargetWeightGoal">Weight
+                                                    Goal</label> <select id="calorieTargetWeightGoal">
+                                                    <option selected="selected" value="loseQuickly">Lose Quickly (-500
+                                                        kcal)</option>
+                                                    <option value="loseSlowly">Lose Slowly (-250 kcal)</option>
+                                                    <option value="maintain">Maintain (+/- 0 kcal)</option>
+                                                    <option value="gainSlowly">Gain Slowly (+250 kcal)</option>
+                                                    <option value="gainQuickly">Gain Quickly (+500 kcal)</option>
+                                                </select></div>
+                                            <div class="btn-group">
+                                                <button type="submit" class="btn-primary cal_buttons" onclick="show()">Calculate</button>
+                                                <button type="reset" id="calorieTargetFormReset"
+                                                    class="btn-secondary cal_buttons" onclick="hide()">Reset</button>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                    <div id="calorieTargetResult"></div>
+                                    <a id="recipes_link" href="https://mindsboom.com/?cal=100">SHOW RECIPES</a>
+                                    <div id="multipliersDiv">
+                                        <p>TDEE and Calorie Targets Based on BMR</p>
+                                        <table class="responsive">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">BMR</th>
+                                                    <th scope="col">Multiplier</th>
+                                                    <th scope="col">Maintenance</th>
+                                                    <th scope="col">Lose Quickly</th>
+                                                    <th scope="col">Lose Slowly</th>
+                                                    <th scope="col">Gain Slowly</th>
+                                                    <th scope="col">Gain Quickly</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td></td>
+                                                    <td title="Sedentary">1.2</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td title="Lightly Active">1.375</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td title="Moderately Active">1.55</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td title="Very Active">1.725</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td title="Extra Active">1.9</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
-                                </div>
-                            </form>
-
-                            <form id="form02">
-                                <h2>Physical Activity Level</h2>
-                                <div class="inner">
-                                    <span class="calc_subtitle">
-                                        Select one that best matches your physical activity level.
-                                    </span>
-                                    <div class="activity_selector">
-                                        <strong>Sedentary</strong><br>
-                                        <small>Little or no exercise</small>
-                                    </div>
-                                    <div class="activity_selector">
-                                        <strong>Lightly active</strong><br>
-                                        <small>Light exercise/sports 1-3 days/week</small>
-                                    </div>
-                                    <div class="activity_selector">
-                                        <strong>Moderatetely active</strong><br>
-                                        <small>Moderate exercise/sports 3-5 days/week</small>
-                                    </div>
-                                    <div class="activity_selector">
-                                        <strong>Very active</strong><br>
-                                        <small>Hard exercise/sports 6-7 days a week</small>
-                                    </div>
-                                    <div class="activity_selector">
-                                        <strong>Extra active</strong><br>
-                                        <small>Very hard exercise/sports &amp; physical job or 2x training</small>
-                                    </div>
-                                </div>
-                            </form>
-
-                            <div id="result_wrapper">
-                                <h2>Final Score</h2>
-                                <div id="result">
-                                    <strong>Based on the information you have provided, your daily requirement is
-                                        estimated to be:</strong>
-                                    <div id="score">
-                                        1000 kcal
-                                    </div>
-                                    <p>This is the amount of calories needed to maintain your current weight.</p>
-                                </div>
-                            </div>
-                            <div class="calc_control">
-                                <button class="btn" type="button" id="back">&lt;&lt; BACK</button>
-                                <button class="btn" type="button" id="proceed">PROCEED &gt;&gt;</button>
-                                <button class="btn" type="button" id="start_over">START OVER &gt;&gt;</button>
+                                </section>
                             </div>
 
                             <div class="clear"></div>
@@ -711,7 +260,7 @@
                         <li><a href="/?page=contactUs">Contact us</a></li>
                     </ul>
                 </div>
-    
+
                 <div class="ft-main-item" id="main-item">
                     <a href="/" class="logo"><img src="imgs/logo.png" alt=""></a>
                     <div class="links">
@@ -721,54 +270,73 @@
                         <img src="imgs/visa-electron.png">
                     </div>
                 </div>
-    
+
                 <div class="ft-main-item side footer-contact">
                     <h2 class="ft-title">Contact us</h2>
                     <ul>
                         <li>
-    
-                            <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm94.273438 320.105469c8.339843 8.34375 8.339843 21.824219 0 30.167969-4.160157 4.160156-9.621094 6.25-15.085938 6.25-5.460938 0-10.921875-2.089844-15.082031-6.25l-64.105469-64.109376-64.105469 64.109376c-4.160156 4.160156-9.621093 6.25-15.082031 6.25-5.464844 0-10.925781-2.089844-15.085938-6.25-8.339843-8.34375-8.339843-21.824219 0-30.167969l64.109376-64.105469-64.109376-64.105469c-8.339843-8.34375-8.339843-21.824219 0-30.167969 8.34375-8.339843 21.824219-8.339843 30.167969 0l64.105469 64.109376 64.105469-64.109376c8.34375-8.339843 21.824219-8.339843 30.167969 0 8.339843 8.34375 8.339843 21.824219 0 30.167969l-64.109376 64.105469zm0 0"></path></svg>
+
+                            <svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m256 0c-141.164062 0-256 114.835938-256 256s114.835938 256 256 256 256-114.835938 256-256-114.835938-256-256-256zm94.273438 320.105469c8.339843 8.34375 8.339843 21.824219 0 30.167969-4.160157 4.160156-9.621094 6.25-15.085938 6.25-5.460938 0-10.921875-2.089844-15.082031-6.25l-64.105469-64.109376-64.105469 64.109376c-4.160156 4.160156-9.621093 6.25-15.082031 6.25-5.464844 0-10.925781-2.089844-15.085938-6.25-8.339843-8.34375-8.339843-21.824219 0-30.167969l64.109376-64.105469-64.109376-64.105469c-8.339843-8.34375-8.339843-21.824219 0-30.167969 8.34375-8.339843 21.824219-8.339843 30.167969 0l64.105469 64.109376 64.105469-64.109376c8.34375-8.339843 21.824219-8.339843 30.167969 0 8.339843 8.34375 8.339843 21.824219 0 30.167969l-64.109376 64.105469zm0 0">
+                                </path>
+                            </svg>
                             <a href="/?page=cancel">Cancel subscription</a>
                         </li>
-                        <li><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="20" width="20" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                        <li><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="20" width="20"
+                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                <g>
                                     <g>
-                                        <g>
-                                            <polygon points="339.392,258.624 512,367.744 512,144.896 "></polygon>
-                                        </g>
+                                        <polygon points="339.392,258.624 512,367.744 512,144.896 "></polygon>
                                     </g>
+                                </g>
+                                <g>
                                     <g>
-                                        <g>
-                                            <polygon points="0,144.896 0,367.744 172.608,258.624 "></polygon>
-                                        </g>
+                                        <polygon points="0,144.896 0,367.744 172.608,258.624 "></polygon>
                                     </g>
+                                </g>
+                                <g>
                                     <g>
-                                        <g>
-                                            <path d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z"></path>
-                                        </g>
+                                        <path
+                                            d="M480,80H32C16.032,80,3.36,91.904,0.96,107.232L256,275.264l255.04-168.032C508.64,91.904,495.968,80,480,80z">
+                                        </path>
                                     </g>
+                                </g>
+                                <g>
                                     <g>
-                                        <g>
-                                            <path d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856
-                                L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z"></path>
-                                        </g>
+                                        <path
+                                            d="M310.08,277.952l-45.28,29.824c-2.688,1.76-5.728,2.624-8.8,2.624c-3.072,0-6.112-0.864-8.8-2.624l-45.28-29.856
+                                L1.024,404.992C3.488,420.192,16.096,432,32,432h448c15.904,0,28.512-11.808,30.976-27.008L310.08,277.952z">
+                                        </path>
                                     </g>
-                                </svg>
+                                </g>
+                            </svg>
                             <a href="mailto:support@mindsboom.com">support@mindsboom.com</a>
                         </li>
-                        <li><svg id="Capa_1" enable-background="new 0 0 512 512" height="20" viewBox="0 0 512 512" width="20" xmlns="http://www.w3.org/2000/svg">
-                            <g>
-                                <circle cx="256" cy="165" r="75"></circle>
-                                <path d="m256 0c-81.108 0-165 61.714-165 165 0 94.351 147.217 274.08 153.472 281.609 2.856 3.413 7.075 5.391 11.528 5.391s8.672-1.978 11.528-5.391c6.255-7.529 153.472-187.258 153.472-281.609 0-90.981-74.019-165-165-165zm0 270c-57.891 0-105-47.109-105-105s47.109-105 105-105 105 47.109 105 105-47.109 105-105 105z"></path>
-                                <path d="m357.087 377.811c-28.922 41.873-55.961 75.306-66.487 87.973-8.643 10.327-21.241 16.216-34.6 16.216s-25.957-5.889-34.541-16.143c-10.551-12.698-37.608-46.155-66.544-88.046-38.83 13.722-63.915 35.1-63.915 59.189 0 41.42 73.874 75 165 75s165-33.58 165-75c0-24.088-25.084-45.467-63.913-59.189z"></path>
-                            </g>
-                        </svg> <a href="https://goo.gl/maps/shc1HkVLN8X9Va9cA">Radinet LTD, Karyatidon str, 2311 Lakatamia, Nicosia, Cyprus</a></li>
-                            <li>
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M17.2969 4.49609L15.2168 2.41797C15.0701 2.27059 14.8957 2.15366 14.7036 2.07389C14.5116 1.99412 14.3056 1.95308 14.0977 1.95313C13.6738 1.95313 13.2754 2.11914 12.9766 2.41797L10.7383 4.65625C10.5909 4.80298 10.474 4.97738 10.3942 5.16944C10.3144 5.3615 10.2734 5.56743 10.2734 5.77539C10.2734 6.19922 10.4395 6.59766 10.7383 6.89648L12.375 8.5332C11.9919 9.37766 11.4592 10.1459 10.8027 10.8008C10.1479 11.4589 9.37975 11.9935 8.53516 12.3789L6.89844 10.7422C6.75171 10.5948 6.57731 10.4779 6.38525 10.3981C6.19319 10.3183 5.98727 10.2773 5.7793 10.2773C5.35547 10.2773 4.95703 10.4434 4.65821 10.7422L2.41797 12.9785C2.27041 13.1255 2.15338 13.3002 2.0736 13.4926C1.99383 13.685 1.95288 13.8913 1.95313 14.0996C1.95313 14.5234 2.11914 14.9219 2.41797 15.2207L4.49414 17.2969C4.97071 17.7754 5.62891 18.0469 6.30469 18.0469C6.44727 18.0469 6.58399 18.0352 6.71875 18.0117C9.35157 17.5781 11.9629 16.1777 14.0703 14.0723C16.1758 11.9688 17.5742 9.35937 18.0137 6.71875C18.1465 5.91211 17.8789 5.08203 17.2969 4.49609V4.49609Z" fill="#A4C74D"/>
-                                    </svg>
-                                <a
-                                    href="https://api.whatsapp.com/send/?phone=35795158557">Support:&nbsp;+357&nbsp;95158557</a>
-                            </li>
+                        <li><svg id="Capa_1" enable-background="new 0 0 512 512" height="20" viewBox="0 0 512 512"
+                                width="20" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <circle cx="256" cy="165" r="75"></circle>
+                                    <path
+                                        d="m256 0c-81.108 0-165 61.714-165 165 0 94.351 147.217 274.08 153.472 281.609 2.856 3.413 7.075 5.391 11.528 5.391s8.672-1.978 11.528-5.391c6.255-7.529 153.472-187.258 153.472-281.609 0-90.981-74.019-165-165-165zm0 270c-57.891 0-105-47.109-105-105s47.109-105 105-105 105 47.109 105 105-47.109 105-105 105z">
+                                    </path>
+                                    <path
+                                        d="m357.087 377.811c-28.922 41.873-55.961 75.306-66.487 87.973-8.643 10.327-21.241 16.216-34.6 16.216s-25.957-5.889-34.541-16.143c-10.551-12.698-37.608-46.155-66.544-88.046-38.83 13.722-63.915 35.1-63.915 59.189 0 41.42 73.874 75 165 75s165-33.58 165-75c0-24.088-25.084-45.467-63.913-59.189z">
+                                    </path>
+                                </g>
+                            </svg> <a href="https://goo.gl/maps/shc1HkVLN8X9Va9cA">Radinet LTD, Karyatidon str, 2311
+                                Lakatamia, Nicosia, Cyprus</a></li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.2969 4.49609L15.2168 2.41797C15.0701 2.27059 14.8957 2.15366 14.7036 2.07389C14.5116 1.99412 14.3056 1.95308 14.0977 1.95313C13.6738 1.95313 13.2754 2.11914 12.9766 2.41797L10.7383 4.65625C10.5909 4.80298 10.474 4.97738 10.3942 5.16944C10.3144 5.3615 10.2734 5.56743 10.2734 5.77539C10.2734 6.19922 10.4395 6.59766 10.7383 6.89648L12.375 8.5332C11.9919 9.37766 11.4592 10.1459 10.8027 10.8008C10.1479 11.4589 9.37975 11.9935 8.53516 12.3789L6.89844 10.7422C6.75171 10.5948 6.57731 10.4779 6.38525 10.3981C6.19319 10.3183 5.98727 10.2773 5.7793 10.2773C5.35547 10.2773 4.95703 10.4434 4.65821 10.7422L2.41797 12.9785C2.27041 13.1255 2.15338 13.3002 2.0736 13.4926C1.99383 13.685 1.95288 13.8913 1.95313 14.0996C1.95313 14.5234 2.11914 14.9219 2.41797 15.2207L4.49414 17.2969C4.97071 17.7754 5.62891 18.0469 6.30469 18.0469C6.44727 18.0469 6.58399 18.0352 6.71875 18.0117C9.35157 17.5781 11.9629 16.1777 14.0703 14.0723C16.1758 11.9688 17.5742 9.35937 18.0137 6.71875C18.1465 5.91211 17.8789 5.08203 17.2969 4.49609V4.49609Z"
+                                    fill="#A4C74D" />
+                            </svg>
+                            <a
+                                href="https://api.whatsapp.com/send/?phone=35795158557">Support:&nbsp;+357&nbsp;95158557</a>
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -778,6 +346,7 @@
     <script src="./js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script src="js/calc.js"></script>
+    <script type="text/javascript" src="js/responsive-tables.js"></script>
 </body>
 
 </html>
