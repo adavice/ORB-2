@@ -67,8 +67,7 @@
             function r(e) {
                 e.style.backgroundColor = "#a4c74d",
                     e.style.color = "white",
-                   e.scrollIntoView(),
-                  document.getElementById("form01").scrollIntoView()
+                    e.scrollIntoView()
             }
             function o(e, t) {
                 if (null === e.resultElem) {
@@ -360,7 +359,6 @@
                     v.resultElem.style.color = "#a4c74d",
                     v.resultValue = I,
                     p(B),
-
                     e.preventDefault()
             }
             function p(e) {
