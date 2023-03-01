@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 .clear {
     clear: both;
 }
@@ -37,8 +41,8 @@ main .contactForm.calc .contactBox {
 
 #main {
     position: relative;
-    min-height: 680px;
-    max-width: 480px;
+    min-height: 636px;
+    max-width: 680px;
     min-width: 310px;
     margin: 0 auto;
     border: 2px solid #a4c74d;
