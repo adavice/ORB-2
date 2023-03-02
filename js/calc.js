@@ -51,8 +51,7 @@
             Object.defineProperty(e, "__esModule", {
                 value: !0
             })
-    }
-        ,
+    },
         n.p = "/",
         (() => {
             function e(e) {
@@ -325,6 +324,7 @@
                 run: function () {
                     this.form && (this.form.addEventListener("submit", h),
                         this.formReset.addEventListener("click", b))
+
                 }
             };
             function h(e) {
@@ -435,6 +435,7 @@
                                 p.textContent = b,
                                     v.resultValue && b === v.resultValue ? r(p) : t(p)
                             }
+
                         } else {
                             u.textContent = null,
                                 i.textContent = null;
@@ -472,11 +473,15 @@
                 v.run()
         }
         )()
+
 }
 )();
 
 function show() {
-    document.getElementById("recipes_link").style.display = "block";
+    setTimeout(() => {
+        document.getElementById("recipes_link").style.display = "block";
+        document.getElementById("main").scrollIntoView()
+    }, "600")
 }
 
 function hide() {
