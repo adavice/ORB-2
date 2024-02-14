@@ -9,6 +9,7 @@
 	--bg-text: #28282f;
 	--accent1: #f3b70e;
 	--accent2: #474753;
+	--accent3: #60606E;
 }
 body {
 	background:url(../imgs/flour_bg.png)no-repeat, url(../imgs/flour_bg2.png)no-repeat, var(--bg-text);

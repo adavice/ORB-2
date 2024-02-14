@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/slick-carouse1.8.1.css">
     <link rel="stylesheet" href="css/slick-carouse1.8.1-theme.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/articles.css">
+    <link rel="stylesheet" href="css/mealplan.css">
     <style>
         main .slider .img1 {
             background: url(https://photos.bigoven.com/recipe/hero/chicken-lentil-kale-soup.jpg) no-repeat center;
@@ -135,158 +135,342 @@
             </div>
 
         </header>
-        <main class="articles">
+        <main class="mealplan">
 
             <section class="title">
-                <h1>Popular articles</h1>
-                <div class="line"></div>
+                <h2>My Meal Plan</h2>
+               
             </section>
             <section class="container">
-                <div class="set">
-                    <div>
-                        <div class="img">
-                            <img src="imgs/articles/wellness.png" alt="">
+               <div class="box-wrapper">
+                <p>Take control of your dietary needs while enjoying flavorful meals!<br>
+                    Add recipes and check their nutritional content to satisfy your taste.</p>
+                    <div class="table-wrapper">
+
+                        <div class="indicators-wrapper desktop">
+
+                            <div class="indicator">
+                                <p>Calories</p>
+                                <p>kcal</p>
+                            </div>
+
+                            <div class="indicator">
+                                <p>Proteins</p>
+                                <p>g</p>
+                            </div>
+
+                            <div class="indicator">
+                                <p>Fats</p>
+                                <p>g</p>
+                            </div>
+
+                            <div class="indicator">
+                                <p>Carbs</p>
+                                <p>g</p>
+                            </div>
+
+                            <div class="indicator">
+                                <p>Sugar</p>
+                                <p>g</p>
+                            </div>
+
+
                         </div>
-                        <div class="wrap">
-                            <h3>5 WELLNESS TRENDS YOU WILL SEE THIS YEAR </h3>
-                            <p></p>
-                            <a href="article_read_1.html" class="showRecipe">Read More</a>
+                        <div class="divider"></div>
+                        <div class="meal-wrapper">
+                            <div class="meal">
+                                <div class="recipe">
+                                    <div>
+                                        <img class="recipe-img" src="https://photos.bigoven.com/recipe/hero/chicken-zorba.jpg" alt="">
+                                        <h3>Chicken Zorba</h3>
+                                    </div>
+                                    <img class="meal-close" src="imgs/close.svg">
+
+                                </div>
+
+                                <div class="meal-elements">
+                                    
+                                    <div class="m-element kcal">
+                                        <div class="mobile-indicator mobile">
+                                            <p>Calories</p>
+                                            <p>kcal</p>
+                                        </div>
+                                       <span> 199</span>
+                                    </div>
+                                    
+                                    <div class="m-element proteins">
+                                        <div class="mobile-indicator mobile">
+                                            <p>Proteins</p>
+                                            <p>g</p>
+                                        </div>
+                                        <span> 9.6</span>
+                                    </div>
+                                    
+                                    <div class="m-element fats">
+                                        <div class="mobile-indicator mobile">
+                                            <p>Fats</p>
+                                            <p>g</p>
+                                        </div>
+                                        <span>  7.5 </span>
+                                    </div>
+                                    
+                                    <div class="m-element carbs">
+                                        <div class="mobile-indicator mobile">
+                                            <p>Carbs</p>
+                                            <p>g</p>
+                                        </div>
+                                        <span> 23.8</span>
+                                    </div>
+
+                                    <div class="m-element sugar">
+                                        <div class="mobile-indicator mobile">
+                                            <p>Sugar</p>
+                                            <p>g</p>
+                                        </div>
+                                        <span>22.0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
                         </div>
+
+
+                        <div class="meal-wrapper">
+                            <div class="add">
+                                <a href="index.html" class="add-btn">
+                                    <img id="mealplus" src="imgs/plus.svg" />
+                                    Add recipe
+                                </a>
+                                <div class="meal-elements">
+                                    
+                                    <div class="m-element kcal">
+                                        <div class="mobile-indicator mobile">
+                                            <p>Calories</p>
+                                            <p>kcal</p>
+                                        </div>
+                                       <span> -</span>
+                                    </div>
+                                    
+                                    <div class="m-element proteins">
+                                        <div class="mobile-indicator mobile">
+                                            <p>Proteins</p>
+                                            <p>g</p>
+                                        </div>
+                                        <span> -</span>
+                                    </div>
+                                    
+                                    <div class="m-element fats">
+                                        <div class="mobile-indicator mobile">
+                                            <p>Fats</p>
+                                            <p>g</p>
+                                        </div>
+                                        <span>  - </span>
+                                    </div>
+                                    
+                                    <div class="m-element carbs">
+                                        <div class="mobile-indicator mobile">
+                                            <p>Carbs</p>
+                                            <p>g</p>
+                                        </div>
+                                        <span> -</span>
+                                    </div>
+
+                                    <div class="m-element sugar">
+                                        <div class="mobile-indicator mobile">
+                                            <p>Sugar</p>
+                                            <p>g</p>
+                                        </div>
+                                        <span>-</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                        </div>
+
+                        <button id="clear" type="reset" class="clear" >Clear the day</button>
+                       
+                        <div class="message account-msg">
+                            <img src="imgs/warning.svg">
+                            Please set your goal in your <a href="">Account</a> 
+                        </div>
+
+                        <div class="divider mobile"></div>
+                        
+
+                        <div class="result">
+
+                            <div class="indicators-wrapper total">
+                                Total
+
+                                <div class="meal-elements">
+                                    
+                                    <div class="m-element kcal">
+                                        -
+                                    </div>
+                                    
+                                    <div class="m-element proteins">
+                                        -
+                                    </div>
+                                    
+                                    <div class="m-element fats">
+                                        -
+                                    </div>
+                                    
+                                    <div class="m-element carbs">
+                                        -
+                                    </div>
+
+                                    <div class="m-element sugar">
+                                        -
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="indicators-wrapper goal">
+                                Goal
+
+                                <div class="meal-elements">
+
+                                    <div class="m-element kcal">
+                                        -
+                                    </div>
+                                    
+                                    <div class="m-element proteins">
+                                        -
+                                    </div>
+                                    
+                                    <div class="m-element fats">
+                                        -
+                                    </div>
+                                    
+                                    <div class="m-element carbs">
+                                        -
+                                    </div>
+
+                                    <div class="m-element sugar">
+                                        -
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="indicators-wrapper left">
+                                Left
+
+                                <div class="meal-elements">
+
+                                    <div class="m-element kcal">
+                                        -
+                                    </div>
+                                    
+                                    <div class="m-element proteins">
+                                        -
+                                    </div>
+                                    
+                                    <div class="m-element fats">
+                                        -
+                                    </div>
+                                    
+                                    <div class="m-element carbs">
+                                        -
+                                    </div>
+
+                                    <div class="m-element sugar">
+                                        -
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="indicators-wrapper">
+
+                                <div class="indicator">
+                                    <p>Calories</p>
+                                    <p>kcal</p>
+                                </div>
+
+                                <div class="indicator">
+                                    <p>Proteins</p>
+                                    <p>g</p>
+                                </div>
+
+                                <div class="indicator">
+                                    <p>Fats</p>
+                                    <p>g</p>
+                                </div>
+
+                                <div class="indicator">
+                                    <p>Carbs</p>
+                                    <p>g</p>
+                                </div>
+
+                                <div class="indicator">
+                                    <p>Sugar</p>
+                                    <p>g</p>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="save-box">
+                            When you are done, please click the Save button below.
+                            <button type="submit" class="meal-btn save" >Save</button>
+                        </div>
+                        <div class="divider"></div>
+
+                        <button type="button" class="meal-btn generate" >Generate Ingridient List</button>
+                        
+                        <div class="ingridients">
+                            <div class="message  ingridient-msg">
+                                <img  src="imgs/warning.svg">
+                                No recipes added yet, please fill the Meal Plan first.  <a href="">Search for the recipes</a> 
+                            </div>
+
+                            <h3>Ingridient List</h3>
+
+                            <ul class="i-list">
+                                <li>2 each Squid tubes cut into inch diamond shapes</li>
+                                <li>2 pieces Snapper or similar fish cut into inch cubes</li>
+                                <li>6 each Scallops </li>
+                                <li>6 each Shrimp peeled raw</li>
+                                <li>1 ea Onion chopped chinese style</li>
+                                <li>1 8-oz pack Hokkien noodles </li>
+                                <li>1/4 cup Sweet chilli sauce </li>
+                                <li>2 tbsp Peanut oil </li>
+                                <li>2 tbsp Heavy soy sauce </li>
+                                <li>1 tsp Fish sauce </li>
+                                <li>2 cloves Garlic </li>
+                                <li>1 Handful  Mixed vegies (chopped (I used butter beans, red bell pepper))</li>
+                                <li>2 tbsp Corn flour </li>
+                                <li>1/2 cup Water </li>
+                            </ul>
+
+                            <button type="button" class="meal-btn download" >Download Ingridient List</button>
+                        
+                        </div>
+
+
                     </div>
-                    <div>
-                        <div class="img">
-                            <img src="imgs/articles/coconut.png" alt="">
-                        </div>
-                        <div class="wrap">
-                            <h3>COCONUT OIL WONDERS</h3>
-                            <p></p>
-                            <a href="article_read_2.html" class="showRecipe">Read More</a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="img">
-                            <img src="imgs/articles/water.png" alt="">
-                        </div>
-                        <div class="wrap">
-                            <h3>WATER BALANCE, IMPORTANCE OF GOOD HYDRATION</h3>
-                            <p></p>
-                            <a href="article_read_3.html" class="showRecipe">Read More</a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="img">
-                            <img src="imgs/articles/limited%20budget.png" alt="">
-                        </div>
-                        <div class="wrap">
-                            <h3>TIPS FOR CLEAN EATING WITH A LIMITED BUDGET</h3>
-                            <p></p>
-                            <a href="article_read_4.html" class="showRecipe">Read More</a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="img">
-                            <img src="imgs/articles/intuitive.png" alt="">
-                        </div>
-                        <div class="wrap">
-                            <h3>A QUICK GUIDE TO INTUITIVE FOOD</h3>
-                            <p></p>
-                            <a href="article_read_5.html" class="showRecipe">Read More</a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="img">
-                            <img src="imgs/articles/serving_size.png" alt="">
-                        </div>
-                        <div class="wrap">
-                            <h3>HOW TO MEASURE SERVING SIZES</h3>
-                            <p></p>
-                            <a href="article_read_6.html" class="showRecipe">Read More</a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="img">
-                            <img src="imgs/articles/healthy_lifestyle.png" alt="">
-                        </div>
-                        <div class="wrap">
-                            <h3>5 TIPS FOR A HEALTHY LIFESTYLE</h3>
-                            <p></p>
-                            <a href="article_read_7.html" class="showRecipe">Read More</a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="img">
-                            <img src="imgs/articles/anti-stress.png" alt="">
-                        </div>
-                        <div class="wrap">
-                            <h3>5 ANTI-STRESS FOODS THAT CAN IMPROVE YOUR MOOD</h3>
-                            <p></p>
-                            <a href="article_read_8.html" class="showRecipe">Read More</a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="img">
-                            <img src="imgs/articles/live_longer.png" alt="">
-                        </div>
-                        <div class="wrap">
-                            <h3>9 NUTRITIONAL RULES TO HELP YOU LIVE LONGER</h3>
-                            <p></p>
-                            <a href="article_read_9.html" class="showRecipe">Read More</a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="img">
-                            <img src="imgs/articles/sleep.png" alt="">
-                        </div>
-                        <div class="wrap">
-                            <h3>HOW TO GET ENOUGH SLEEP EVERY DAY? </h3>
-                            <p></p>
-                            <a href="article_read_10.html" class="showRecipe">Read More</a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="img">
-                            <img src="imgs/articles/lemon.png" alt="">
-                        </div>
-                        <div class="wrap">
-                            <h3>LEMON ZEST: BENEFITS FOR THE BODY</h3>
-                            <p></p>
-                            <a href="article_read_11.html" class="showRecipe">Read More</a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="img">
-                            <img src="imgs/articles/coffee.png" alt="">
-                        </div>
-                        <div class="wrap">
-                            <h3>INSTEAD OF COFFEE: 5 EFFECTIVE WAYS TO CHEER UP </h3>
-                            <p></p>
-                            <a href="article_read_12.html" class="showRecipe">Read More</a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="img">
-                            <img src="imgs/articles/waking_up_early.png" alt="">
-                        </div>
-                        <div class="wrap">
-                            <h3>7 SIMPLE TIPS TO WAKE UP EARLY</h3>
-                            <p></p>
-                            <a href="article_read_13.html" class="showRecipe">Read More</a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="img">
-                            <img src="imgs/articles/bedtime.jpg" alt="">
-                        </div>
-                        <div class="wrap">
-                            <h3>FOOD BEFORE BEDTIME</h3>
-                            <p></p>
-                            <a href="article_read_14.html" class="showRecipe">Read More</a>
-                        </div>
-                    </div>
-                </div>
+               </div>
+
             </section>
 
         </main>
+        <div class="popup pop-save">
+            <div class="popup-content">
+                <p>If you will leave now your Meal Plan won’t be saved.<br>
+                    Are you sure you want to leave? </p>
+                   <div class="divider"></div>
+                <div class="btn-wrapper">
+                    <button  class="meal-btn cancel" >Cancel</button>
+
+                    <button  class="meal-btn2 leave" >Leave anyway</button>
+                </div> 
+            </div>
+        </div>
         <footer>
             <section class="ft-main ">
                 <div class="ft-main-item side footer-menu">
@@ -363,6 +547,7 @@
             </section>
             <p>© 2022 mindsboomrecipes.com. All Rights Reserved. Powered by AryaMg LTD.</p>
         </footer>
+        
     </div>
     <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
