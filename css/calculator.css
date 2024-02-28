@@ -349,3 +349,11 @@ option {
     display: none;
     font-weight: 600;
 }
+
+.meal-btn {
+    width: fit-content;
+    background-color: var(--main);
+    padding: 10px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
