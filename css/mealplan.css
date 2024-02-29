@@ -321,7 +321,7 @@
 .add_error {
     padding: 15px 0;
     color: #ff2c2c;
-    /*display: none;*/
+    display: none;
 }
 
 /*mobile*/
