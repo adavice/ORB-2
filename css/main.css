@@ -545,3 +545,15 @@ main .video2 h1 {
     /* display: none; */
     align-items: center;
 }
+
+.links a{
+	text-decoration: underline;
+}
+
+.add_error {
+    padding: 0 0 15px 0;
+    color: #ff2c2c;
+	text-align: center;
+	text-decoration: underline;
+    display: none;
+}
