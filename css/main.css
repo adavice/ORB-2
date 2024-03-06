@@ -555,5 +555,5 @@ main .video2 h1 {
     color: #ff2c2c;
 	text-align: center;
 	text-decoration: underline;
-    display: none;
+    /*display: none;*/
 }
