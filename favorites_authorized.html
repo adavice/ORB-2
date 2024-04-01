@@ -3,14 +3,37 @@
 
 <head>
 	<meta charset="UTF-8">
-	<link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.png">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
-	<title>Premium recipe</title>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+	<title>MindsBoom Recipes</title>
+	<link rel="shortcut icon" href="imgs/favicon.png" />
+	<link rel="shortcut icon" type="image/x-icon" href="imgs/favicon.png">
+	<link rel="stylesheet" href="css/open_sans.css">
+	<link rel="stylesheet" href="css/playfair.css">
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/common.css">
-	<link rel="stylesheet" href="css/premiumRecipe.css">
+	<link rel="stylesheet" href="css/slick-carouse1.8.1.css">
+	<link rel="stylesheet" href="css/slick-carouse1.8.1-theme.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<style>
+		main .slider .img1 {
+			background: url(https://photos.bigoven.com/recipe/hero/chicken-lentil-kale-soup.jpg) no-repeat center;
+			background-size: cover;
+		}
+
+		main .slider .img2 {
+			background: url(https://photos.bigoven.com/recipe/hero/simple-fondant-potatoes.jpg) no-repeat center;
+			background-size: cover;
+		}
+
+		main .slider .img3 {
+			background: url(https://photos.bigoven.com/recipe/hero/tomato-basil-dip.jpg) no-repeat center;
+			background-size: cover;
+		}
+	</style>
+
+
 </head>
 
 <body>
@@ -97,94 +120,71 @@
 
 		</header>
 		<main>
-			<section class="premiumRecipe container">
-				<div class="img">
-					<img src="imgs/1.jpg" alt="">
-				</div>
-				<div class="recipe">
-					<h2>The best vegan burger</h2>
-					<p class="description">This easy recipe for tofu veggie burgers is easy to make and great for an
-						everyday vegetarian and vegan lunch, dinner, picnic or for a vegetarian barbecue. Need them to
-						be gluten-free as well? Just swap out the regular flour for any kind of gluten-free flour.
-						Enjoy!</p>
-					<div class="info">
-						<span class="cook">
-							<span class="title">COOKS IN: </span>
-							<span>25MINUTES PLUS PROVING TIME</span>
-						</span>
-						<span class="difficulty">
-							<span class="title">DIFFICULTY: </span>
-							<span>NOT TOO TRICKY</span>
-						</span>
-					</div>
-					<div class="buttons_recipe">
-						<a class="recipe_link" href="#">+ Add to my meal plan</a>
-						<a class="recipe_link" href="#"><img src="imgs/heart_light.svg"/> Favourites</a>
-					</div>
-					<div class="nutrition">
-						<span class="title">Nutrition per serving:</span>
-						<div class="row">
-							<div class="calories">
-								<span class="title">Calories</span>
-								<span class="unit"><span class="number">393</span> kcal</span>
+			<section class="title">
+				<h1>Favorites</h1>
+				<div class="line"></div>
+			</section>
+
+			<section class="container">
+				<div class="set">
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/crunchy-ice-cream-dessert.jpg" alt="">
+							<a class="favorite_link" href="#"><img src="imgs/heart.svg" /></a>
+						</div>
+						<div class="wrap">
+							<h3>Crunchy Ice Cream Dessert</h3>
+							<p>Delicious ice cream dessert that is crunchy and sweet.</p>
+							<div class="links">
+								<a href="#" class="addtoMealplan">+ Add to Meal plan</a>
 							</div>
-							<div class="fat">
-								<span class="title">Fat</span>
-								<span class="unit"><span class="number">17.2</span> g</span>
-							</div>
-							<div class="saturates">
-								<span class="title">Saturates</span>
-								<span class="unit"><span class="number">2.5</span> g</span>
-							</div>
-							<div class="protein">
-								<span class="title">Protein</span>
-								<span class="unit"><span class="number">8.8</span> g</span>
-							</div>
-							<div class="carbs">
-								<span class="title">Carbs</span>
-								<span class="unit"><span class="number">54.1</span> g</span>
-							</div>
-							<div class="sugars">
-								<span class="title">Sugars</span>
-								<span class="unit"><span class="number">4.2</span> g</span>
-							</div>
-							<div class="salt">
-								<span class="title">Salt</span>
-								<span class="unit"><span class="number">1.1</span> g</span>
-							</div>
-							<div class="fibre">
-								<span class="title">Fibre</span>
-								<span class="unit"><span class="number">2.8</span> g</span>
-							</div>
+							<a href="index.html?id=179763" class="showRecipe">Show recipe</a>
 						</div>
 					</div>
-				</div>
-				<div class="ingredients">
-					<h3>Ingredients:</h3>
-					<ul class="ingredientsList">
-						<li>250 g strong bread flour</li>
-						<li>2 teaspoons dried yeast</li>
-						<li>1 teaspoon caster sugar</li>
-						<li>olive oil</li>
-						<li>2 cloves of garlic</li>
-						<li>1 x 400 g tin of chopped tomatoes</li>
-						<li>a few sprigs of fresh basil</li>
-					</ul>
-				</div>
-				<div class="method">
-					<h3>Method:</h3>
-					<ol class="methodList">
-						<li>Mix the flour, yeast, sugar, 1 teaspoon of sea salt, 1 tablespoon of oil and 180ml to 200ml
-							of tepid water.</li>
-						<li>Knead to an elastic dough, then cover and leave to rise for 1 hour.</li>
-						<li>Peel, chop and fry the garlic in 4 tablespoons of oil, then add the tomatoes, pick in the
-							basil leaves, and season with salt and black pepper.</li>
-						<li>Preheat a griddle pan or barbecue.</li>
-						<li>Divide the dough into 4 balls, then roll each out. Brush one side of each with oil, then
-							cook, oiled side down, for 2 to 4 minutes, or until the bottom looks cooked.</li>
-						<li>Brush the raw side with oil and flip over and cook until golden. Top with the sauce and
-							toppings of your choice.</li>
-					</ol>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/best-ever-buckeyes.jpg" alt="">
+							<a class="favorite_link" href="#"><img src="imgs/heart.svg" /></a>
+						</div>
+						<div class="wrap">
+							<h3>Best Ever Buckeyes</h3>
+							<p>Delicious!</p>
+							<div class="links">
+								<a href="#" class="addtoMealplan">+ Add to Meal plan</a>
+							</div>
+							<a href="index.html?id=190392" class="showRecipe">Show recipe</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/lo-mein-noodles-with-shrimp.jpg" alt="">
+							<a class="favorite_link" href="#"><img src="imgs/heart.svg" /></a>
+						</div>
+						<div class="wrap">
+							<h3>Lo Mein Noodles with Shrimp</h3>
+							<p>Lo Mein Noodles with Shrimp</p>
+							<div class="links">
+								<a href="#" class="addtoMealplan">+ Add to Meal plan</a>
+							</div>
+							<a href="index.html?id=107047" class="showRecipe">Show recipe</a>
+						</div>
+					</div>
+					<div>
+						<div class="img">
+							<img src="https://photos.bigoven.com/recipe/hero/frittata-15.jpg" alt="">
+							<a class="favorite_link" href="#"><img src="imgs/heart.svg" /></a>
+						</div>
+						<div class="wrap">
+							<h3>Frittata</h3>
+							<p>A frittata is an egg dish made mainly on the stove, easier than omelets, and can be
+								vehicles for almost any veggies, cheeses, or meats you happen to have around. They are
+								served in wedges and are easily transportable </p>
+							<div class="links">
+								<a href="#" class="addtoMealplan">+ Add to Meal plan</a>
+							</div>
+							<a href="index.html?id=199458" class="showRecipe">Show recipe</a>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>
@@ -283,8 +283,11 @@
 			<p>© 2022 mindsboomrecipes.com. All Rights Reserved. Powered by AryaMg LTD.</p>
 		</footer>
 	</div>
-	<script src="./js/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/slick-carouse1.8.1.min.js"></script>
+	<script type="text/javascript" src="js/slider.js"></script>
+	<script type="text/javascript" src="js/index.js?"></script>
 </body>
 
 </html>

@@ -67,7 +67,13 @@ $(function () {
         $('#popUpLimit, #balanceZero').fadeOut(600);
     });
 
-    $('#sentContactUsForm').on('click', formSumitButtonHandler);
+    $('#popUpLimit').on('click', '.close', function () {
+        $('#popUpLimit, #balanceZero').fadeOut(600);
+    });
+
+    $('.userProfile').click(function () {
+        $('.subMenu').toggleClass('visible');
+    });
 
     function formSumitButtonHandler(e) {
 
