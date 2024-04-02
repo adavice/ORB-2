@@ -953,6 +953,14 @@ main .set>div .img {
 	width: 30px;
 }
 
+.favorite_link.link_added{
+	background: var(--main);
+}
+
+.favorite_link.error_added{
+	background: red;
+}
+
 .sidebar {
 	width: 100%;
 	padding-bottom: 30px;
