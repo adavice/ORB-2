@@ -65,7 +65,7 @@ a {
 }
 
 .wrapper {
-	overflow: hidden;
+	overflow: inherit;
 }
 
 main {

@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +15,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.3.1/css/flag-icon.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/common.css?">
     <link rel="stylesheet" href="css/slick-carouse1.8.1.css">
     <link rel="stylesheet" href="css/slick-carouse1.8.1-theme.min.css">
     <link rel="stylesheet" href="css/main.css">
@@ -68,13 +70,13 @@
                                 d="M12,0C5.373,0,0,5.373,0,12s5.373,12,12,12s12-5.373,12-12S18.627,0,12,0z M12,19.66   c-0.938,0-1.58-0.723-1.58-1.66c0-0.964,0.669-1.66,1.58-1.66c0.963,0,1.58,0.696,1.58,1.66C13.58,18.938,12.963,19.66,12,19.66z    M12.622,13.321c-0.239,0.815-0.992,0.829-1.243,0c-0.289-0.956-1.316-4.585-1.316-6.942c0-3.11,3.891-3.125,3.891,0   C13.953,8.75,12.871,12.473,12.622,13.321z">
                             </path>
                         </g>
-                    </svg> Have a Problem? <a href="./contactUs.html">Contact us</a> or <a href="cancel.html">cancel
+                    </svg> Have a Problem? <a href="/?page=contactUs">Contact us</a> or <a href="/?page=cancel">cancel
                         membership</a></span>
             </div>
         </div>
         <header>
             <div class="container">
-                <a href="index.html" class="logo"><img src="imgs/logo.png" alt=""></a>
+                <a href="/" class="logo"><img src="imgs/logo.png" alt=""></a>
                 <div class="search" style="display: flex;">
                     <form id="searchForm">
                         <input type="search" id="search" placeholder="Search for a recipe" name="search" value="" maxlength="15">
@@ -104,30 +106,35 @@
                 </button>
                 <ul class="headerMenu">
                     <li>
-                        <a href="index.html">Recipes</a>
+                        <a href="/">Recipes</a>
                     </li>
                     <li>
-                        <a href="articles.html">Articles</a>
+                        <a href="/?page=articles">Articles</a>
                     </li>
                     <li>
-                        <a href="calculator.html">Calorie Calculator</a>
+                        <a href="/?page=calculator">Calorie Calculator</a>
                     </li>
                     <li>
-                        <a href="mealplan.html">Meal Plan</a>
+                        <a href="/?page=mealplan">Meal Plan</a>
                     </li>
                 </ul>
-                <div class="login">
-                    <form id="authenticationForm" action="index.html?page=" method="post">
-                        <!--<input type="hidden" name="page" value="">-->
-                        <input type="text" id="userName" name="u" value="" placeholder="User" maxlength="22">
-                        <input type="password" id="userPassword" name="c" placeholder="Password" maxlength="12">
-                        <input type="submit" id="authentication" value="Login" name="authentication">
-                        <a href="signUp2.html" id="signIn">Sign Up</a>
-                        <div class="getPremium">
-                            <span class="text">Don’t have an account?</span>
-                            <a href="signUp2.html" class="getAccess">Get access to premium</a>
-                            <a href="cancel.html" class="getAccess out">Cancel Membership</a>
-                        </div>
+                <ul class="authorized">
+				<li id="balanceZero"></li>
+				<li class="userName">
+					<a class="userProfile" href="#"><img src="imgs/user.png" alt=""><span>1234567890</span></a>
+						<ul class="subMenu">
+							<li><a href="/?page=goal">My goal</a></li>
+							<li><a href="/?page=favorites">Favorites</a></li>
+							<li><a href="/?page=mealplan&delcookie=1"><img src="imgs/exit_icon.png" alt="">Log out</a></li>
+						</ul>
+				</li>
+				<li class="availableRecipes">
+					<span class="recipesNumber">Unlimited</span><span> recipes are available</span>
+				</li>
+				<li class="logOutUser">
+					<a href="/?page=mealplan&delcookie=1"><img src="imgs/exit_icon.png" alt=""><span>Log out</span></a>
+				</li>
+			</ul>
                     </form>
                 </div>
 
@@ -181,10 +188,10 @@
                             <div class="meal">
                                 <div class="recipe">
                                     <div>
-                                        <img class="recipe-img" src="https://photos.bigoven.com/recipe/hero/chicken-zorba.jpg" alt="">
-                                        <h3>Chicken Zorba</h3>
+                                        <a href="/?id=163398"><img class="recipe-img" src="https://photos.bigoven.com/recipe/hero/chocolate-raspberry-cheesecake-3.jpg" alt=""></a>
+                                        <h3><a href="/?id=163398">Chocolate Raspberry Cheesecake</h3></a>
                                     </div>
-                                    <img class="meal-close" src="imgs/close.svg">
+                                    <a href="/?page=mealplan&del=163398"><img class="meal-close" src="imgs/close.svg"></a>
 
                                 </div>
 
@@ -195,7 +202,7 @@
                                             <p>Calories</p>
                                             <p>kcal</p>
                                         </div>
-                                       <span> 199</span>
+                                       <span>486</span>
                                     </div>
                                     
                                     <div class="m-element proteins">
@@ -203,7 +210,7 @@
                                             <p>Proteins</p>
                                             <p>g</p>
                                         </div>
-                                        <span> 9.6</span>
+                                        <span>9.5</span>
                                     </div>
                                     
                                     <div class="m-element fats">
@@ -211,7 +218,7 @@
                                             <p>Fats</p>
                                             <p>g</p>
                                         </div>
-                                        <span>  7.5 </span>
+                                        <span>24.2</span>
                                     </div>
                                     
                                     <div class="m-element carbs">
@@ -219,7 +226,7 @@
                                             <p>Carbs</p>
                                             <p>g</p>
                                         </div>
-                                        <span> 23.8</span>
+                                        <span>60.6</span>
                                     </div>
 
                                     <div class="m-element sugar">
@@ -227,7 +234,239 @@
                                             <p>Sugar</p>
                                             <p>g</p>
                                         </div>
-                                        <span>22.0</span>
+                                        <span>58.5</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                        </div>
+
+
+                        <div class="meal-wrapper">
+                            <div class="meal">
+                                <div class="recipe">
+                                    <div>
+                                        <a href="/?id=254570"><img class="recipe-img" src="https://photos.bigoven.com/recipe/hero/chicken-and-mushroom-crepes-3.jpg" alt=""></a>
+                                        <h3><a href="/?id=254570">Chicken and Mushroom Crepes</h3></a>
+                                    </div>
+                                    <a href="/?page=mealplan&del=254570"><img class="meal-close" src="imgs/close.svg"></a>
+
+                                </div>
+
+                                <div class="meal-elements">
+                                    
+                                    <div class="m-element kcal">
+                                        <div class="mobile-indicator mobile">
+                                            <p>Calories</p>
+                                            <p>kcal</p>
+                                        </div>
+                                       <span>321</span>
+                                    </div>
+                                    
+                                    <div class="m-element proteins">
+                                        <div class="mobile-indicator mobile">
+                                            <p>Proteins</p>
+                                            <p>g</p>
+                                        </div>
+                                        <span>23.0</span>
+                                    </div>
+                                    
+                                    <div class="m-element fats">
+                                        <div class="mobile-indicator mobile">
+                                            <p>Fats</p>
+                                            <p>g</p>
+                                        </div>
+                                        <span>18.5</span>
+                                    </div>
+                                    
+                                    <div class="m-element carbs">
+                                        <div class="mobile-indicator mobile">
+                                            <p>Carbs</p>
+                                            <p>g</p>
+                                        </div>
+                                        <span>15.1</span>
+                                    </div>
+
+                                    <div class="m-element sugar">
+                                        <div class="mobile-indicator mobile">
+                                            <p>Sugar</p>
+                                            <p>g</p>
+                                        </div>
+                                        <span>14.6</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                        </div>
+
+
+                        <div class="meal-wrapper">
+                            <div class="meal">
+                                <div class="recipe">
+                                    <div>
+                                        <a href="/?id=257851"><img class="recipe-img" src="https://photos.bigoven.com/recipe/hero/white-cheddar-chicken-pasta-2.jpg" alt=""></a>
+                                        <h3><a href="/?id=257851">White Cheddar Chicken Pasta</h3></a>
+                                    </div>
+                                    <a href="/?page=mealplan&del=257851"><img class="meal-close" src="imgs/close.svg"></a>
+
+                                </div>
+
+                                <div class="meal-elements">
+                                    
+                                    <div class="m-element kcal">
+                                        <div class="mobile-indicator mobile">
+                                            <p>Calories</p>
+                                            <p>kcal</p>
+                                        </div>
+                                       <span>475</span>
+                                    </div>
+                                    
+                                    <div class="m-element proteins">
+                                        <div class="mobile-indicator mobile">
+                                            <p>Proteins</p>
+                                            <p>g</p>
+                                        </div>
+                                        <span>24.5</span>
+                                    </div>
+                                    
+                                    <div class="m-element fats">
+                                        <div class="mobile-indicator mobile">
+                                            <p>Fats</p>
+                                            <p>g</p>
+                                        </div>
+                                        <span>35.1</span>
+                                    </div>
+                                    
+                                    <div class="m-element carbs">
+                                        <div class="mobile-indicator mobile">
+                                            <p>Carbs</p>
+                                            <p>g</p>
+                                        </div>
+                                        <span>14.4</span>
+                                    </div>
+
+                                    <div class="m-element sugar">
+                                        <div class="mobile-indicator mobile">
+                                            <p>Sugar</p>
+                                            <p>g</p>
+                                        </div>
+                                        <span>13.5</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                        </div>
+
+
+                        <div class="meal-wrapper">
+                            <div class="meal">
+                                <div class="recipe">
+                                    <div>
+                                        <a href="/?id=416179"><img class="recipe-img" src="https://photos.bigoven.com/recipe/hero/pumpkin-bread-20.jpg" alt=""></a>
+                                        <h3><a href="/?id=416179">Pumpkin Bread</h3></a>
+                                    </div>
+                                    <a href="/?page=mealplan&del=416179"><img class="meal-close" src="imgs/close.svg"></a>
+
+                                </div>
+
+                                <div class="meal-elements">
+                                    
+                                    <div class="m-element kcal">
+                                        <div class="mobile-indicator mobile">
+                                            <p>Calories</p>
+                                            <p>kcal</p>
+                                        </div>
+                                       <span>222</span>
+                                    </div>
+                                    
+                                    <div class="m-element proteins">
+                                        <div class="mobile-indicator mobile">
+                                            <p>Proteins</p>
+                                            <p>g</p>
+                                        </div>
+                                        <span>4.0</span>
+                                    </div>
+                                    
+                                    <div class="m-element fats">
+                                        <div class="mobile-indicator mobile">
+                                            <p>Fats</p>
+                                            <p>g</p>
+                                        </div>
+                                        <span>17.6</span>
+                                    </div>
+                                    
+                                    <div class="m-element carbs">
+                                        <div class="mobile-indicator mobile">
+                                            <p>Carbs</p>
+                                            <p>g</p>
+                                        </div>
+                                        <span>12.6</span>
+                                    </div>
+
+                                    <div class="m-element sugar">
+                                        <div class="mobile-indicator mobile">
+                                            <p>Sugar</p>
+                                            <p>g</p>
+                                        </div>
+                                        <span>11.9</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="divider"></div>
+                        </div>
+
+
+                        <div class="meal-wrapper">
+                            <div class="meal">
+                                <div class="recipe">
+                                    <div>
+                                        <a href="/?id=614494"><img class="recipe-img" src="https://photos.bigoven.com/recipe/hero/two-minute-microwave-fudge.jpg" alt=""></a>
+                                        <h3><a href="/?id=614494">Two minute Microwave Fudge</h3></a>
+                                    </div>
+                                    <a href="/?page=mealplan&del=614494"><img class="meal-close" src="imgs/close.svg"></a>
+
+                                </div>
+
+                                <div class="meal-elements">
+                                    
+                                    <div class="m-element kcal">
+                                        <div class="mobile-indicator mobile">
+                                            <p>Calories</p>
+                                            <p>kcal</p>
+                                        </div>
+                                       <span>206</span>
+                                    </div>
+                                    
+                                    <div class="m-element proteins">
+                                        <div class="mobile-indicator mobile">
+                                            <p>Proteins</p>
+                                            <p>g</p>
+                                        </div>
+                                        <span>1.2</span>
+                                    </div>
+                                    
+                                    <div class="m-element fats">
+                                        <div class="mobile-indicator mobile">
+                                            <p>Fats</p>
+                                            <p>g</p>
+                                        </div>
+                                        <span>8.4</span>
+                                    </div>
+                                    
+                                    <div class="m-element carbs">
+                                        <div class="mobile-indicator mobile">
+                                            <p>Carbs</p>
+                                            <p>g</p>
+                                        </div>
+                                        <span>32.6</span>
+                                    </div>
+
+                                    <div class="m-element sugar">
+                                        <div class="mobile-indicator mobile">
+                                            <p>Sugar</p>
+                                            <p>g</p>
+                                        </div>
+                                        <span>32.0</span>
                                     </div>
                                 </div>
                             </div>
@@ -237,7 +476,7 @@
 
                         <div class="meal-wrapper">
                             <div class="add">
-                                <a href="index.html" class="add-btn">
+                                <a href="/" class="add-btn">
                                     <img id="mealplus" src="imgs/plus.svg" />
                                     Add recipe
                                 </a>
@@ -284,14 +523,15 @@
                                     </div>
                                 </div>
                             </div>
+                            
                             <div class="divider"></div>
                         </div>
 
-                        <button id="clear" type="reset" class="clear" >Clear the day</button>
+                        <button id="clear" type="reset" class="clear"  onclick="if(confirm('Are you sure you want to clear the day?')) location.href='/?page=mealplan&clearall=1';">Clear the day</button>
                        
                         <div class="message account-msg">
                             <img src="imgs/warning.svg">
-                            Please set your goal in your <a href="">Account</a> 
+                            Please set your goal in your <a href="/?page=calculator">Account</a> 
                         </div>
 
                         <div class="divider mobile"></div>
@@ -304,25 +544,15 @@
 
                                 <div class="meal-elements">
                                     
-                                    <div class="m-element kcal">
-                                        -
-                                    </div>
+                                    <div class="m-element kcal">1710</div>
                                     
-                                    <div class="m-element proteins">
-                                        -
-                                    </div>
+                                    <div class="m-element proteins">62.3</div>
                                     
-                                    <div class="m-element fats">
-                                        -
-                                    </div>
+                                    <div class="m-element fats">103.8</div>
                                     
-                                    <div class="m-element carbs">
-                                        -
-                                    </div>
+                                    <div class="m-element carbs">135.3</div>
 
-                                    <div class="m-element sugar">
-                                        -
-                                    </div>
+                                    <div class="m-element sugar">130.4</div>
                                 </div>
 
                             </div>
@@ -332,25 +562,15 @@
 
                                 <div class="meal-elements">
 
-                                    <div class="m-element kcal">
-                                        -
-                                    </div>
+                                    <div class="m-element kcal">1644</div>
                                     
-                                    <div class="m-element proteins">
-                                        -
-                                    </div>
+                                    <div class="m-element proteins">90</div>
                                     
-                                    <div class="m-element fats">
-                                        -
-                                    </div>
+                                    <div class="m-element fats">82</div>
                                     
-                                    <div class="m-element carbs">
-                                        -
-                                    </div>
+                                    <div class="m-element carbs">238</div>
 
-                                    <div class="m-element sugar">
-                                        -
-                                    </div>
+                                    <div class="m-element sugar">205</div>
                                 </div>
 
                             </div>
@@ -360,25 +580,15 @@
 
                                 <div class="meal-elements">
 
-                                    <div class="m-element kcal">
-                                        -
-                                    </div>
+                                    <div class="m-element kcal">66</div>
                                     
-                                    <div class="m-element proteins">
-                                        -
-                                    </div>
+                                    <div class="m-element proteins">-27.7</div>
                                     
-                                    <div class="m-element fats">
-                                        -
-                                    </div>
+                                    <div class="m-element fats">21.8</div>
                                     
-                                    <div class="m-element carbs">
-                                        -
-                                    </div>
+                                    <div class="m-element carbs">-102.7</div>
 
-                                    <div class="m-element sugar">
-                                        -
-                                    </div>
+                                    <div class="m-element sugar">-74.6</div>
                                 </div>
 
                             </div>
@@ -415,40 +625,19 @@
                         </div>
                         
                         
-                        <div class="save-box">
-                            When you are done, please click the Save button below.
-                            <button type="submit" class="meal-btn save" >Save</button>
-                        </div>
+                        
                         <div class="divider"></div>
 
-                        <button type="button" class="meal-btn generate" >Generate Ingridient List</button>
+                        
                         
                         <div class="ingridients">
-                            <div class="message  ingridient-msg">
-                                <img  src="imgs/warning.svg">
-                                No recipes added yet, please fill the Meal Plan first.  <a href="">Search for the recipes</a> 
-                            </div>
+                            
 
-                            <h3>Ingridient List</h3>
+                            <h3>Ingredient List</h3>
 
-                            <ul class="i-list">
-                                <li>2 each Squid tubes cut into inch diamond shapes</li>
-                                <li>2 pieces Snapper or similar fish cut into inch cubes</li>
-                                <li>6 each Scallops </li>
-                                <li>6 each Shrimp peeled raw</li>
-                                <li>1 ea Onion chopped chinese style</li>
-                                <li>1 8-oz pack Hokkien noodles </li>
-                                <li>1/4 cup Sweet chilli sauce </li>
-                                <li>2 tbsp Peanut oil </li>
-                                <li>2 tbsp Heavy soy sauce </li>
-                                <li>1 tsp Fish sauce </li>
-                                <li>2 cloves Garlic </li>
-                                <li>1 Handful  Mixed vegies (chopped (I used butter beans, red bell pepper))</li>
-                                <li>2 tbsp Corn flour </li>
-                                <li>1/2 cup Water </li>
-                            </ul>
+                            <ul class="i-list"><li>1  Chocolate or graham cracker pie crust</li><li>2 3-oz packages Cream cheese softened</li><li>1 14-oz can Sweetened condensed milk</li><li>1  Egg</li><li>3 tablespoons Lemon juice</li><li>1 teaspoon Vanilla extract</li><li>1 cup Raspberries ((fresh or frozen))</li><li>2 squares Semi-sweet baking chocolate</li><li>1/4 cup Whipped cream</li><li>12 crepes</li><li>3  Large eggs</li><li>1 1/2 cups Milk</li><li>1 cup All purpose flour</li><li>2 tablespoons All purpose flour</li><li>1 teaspoon Sugar</li><li>2 tablespoons Butter Melted</li><li>Chicken and mushroom filling for crepes</li><li>5 ounces Fresh mushrooms sliced</li><li>3 tablespoons Butter Melted</li><li>1/3 Cup Flour</li><li>1 1/4  Cups Chicken broth Reserved from cooking the chicken</li><li>3/4 Cup heavy cream</li><li>1/3 Cup Dry cooking sherry</li><li>4 Ounces White cheddar cheese Grated</li><li>1 Pound Chicken breasts boneless and skinless Cooked and chopped</li><li>4 tablespoons Parmesan cheese Grated</li><li>For the chicken:</li><li>1 pound boneless skinless chicken breasts, trimmed and cut into 1 inch pieces</li><li>1 tsp dry mustard</li><li>1 T fresh thyme</li><li>1/2 tsp salt</li><li>1/2 tsp pepper</li><li>1 T olive oil</li><li>For the pasta:</li><li>1 pound rotini or other short cut pasta</li><li>2 T butter</li><li>2 T flour</li><li>2  cloves garlic minced</li><li>1 small onion finely diced</li><li>1/4 cup dry white wine</li><li>1 T Dijon mustard</li><li>8 oz sharp white cheddar cheese grated</li><li>2 cups milk ((I used skim milk but mixed in about 2 T heavy cream))</li><li>1 T fresh thyme</li><li>1 T fresh oregano</li><li>Crushed red pepper flakes to taste</li><li>Parmesan cheese to taste</li><li>2 cups All purpose flour or Gluten Free</li><li>1/2  teaspoon salt</li><li>1/2 teaspoon Baking powder</li><li>1 teaspoon Baking soda</li><li>1 teaspoon each ground cloves, nutmeg cinnamon, ginger</li><li>1  Tbl 5 spice to taste</li><li>2 cups  Sugar</li><li>1 1/2 sticks Unsalted butter softened</li><li>2 large Eggs</li><li>1 15 oz can pure pumpkin</li><li>1  pound icing sugar</li><li>2/3 cup Cocoa</li><li>1/4 teaspoon salt</li><li>1/4 cup milk</li><li>2 teaspoons Vanilla</li><li>1/2 cup Butter</li><li>1/2 cup chopped nuts optional</li></ul>
 
-                            <button type="button" class="meal-btn download" >Download Ingridient List</button>
+                            <button type="button" class="meal-btn download" onclick="location.href='/?page=mealplan&download=1';" >Download Ingredient List</button>
                         
                         </div>
 
@@ -526,7 +715,7 @@
                                         </g>
                                     </g>
                                 </svg>
-                            <a href="mailto:support@mindsboom.com">support@mindsboom.com</a>
+                            <a href="/cdn-cgi/l/email-protection#b6c5c3c6c6d9c4c2f6dbdfd8d2c5d4d9d9db98d5d9db"><span class="__cf_email__" data-cfemail="ec9f999c9c839e98ac818582889f8e838381c28f8381">[email&#160;protected]</span></a>
                         </li>
                         <li><svg id="Capa_1" enable-background="new 0 0 512 512" height="20" viewBox="0 0 512 512" width="20" xmlns="http://www.w3.org/2000/svg">
                             <g>
@@ -545,11 +734,11 @@
                     </ul>
                 </div>
             </section>
-            <p>© 2022 mindsboomrecipes.com. All Rights Reserved. Powered by AryaMg LTD.</p>
+            <p>© 2024 mindsboom.com. All Rights Reserved. Powered by AryaMg LTD.</p>
         </footer>
         
     </div>
-    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="js/slick-carouse1.8.1.min.js"></script>
     <script type="text/javascript" src="js/slider.js"></script>
